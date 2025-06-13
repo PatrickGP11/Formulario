@@ -1,64 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Cliente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="login">
-            <header>
-                <h1>Cadastro Cliente</h1>
-            </header>
-            <form>
-                <div>
-                    <label for="">Nome</label>
-                    <input type="text" placeholder="Digite seu primeiro nome">
-                </div>
-                <div>
-                <label for="">Sobrenome</label>
-                <input type="text" placeholder="Digite seu Sobrenome">
-            </div>
-            <div>
-                <label for="">E-mail</label>
-                <input type="email" placeholder="Digite seu E-mail">
-            </div>
-            <div>
-                <label for="">Data de Nascimento</label>
-                <input type="number" placeholder="dd/mm/yyyy">
-            </div>
-            <div>
-                <label for="">CPF</label>
-                <input type="text" placeholder="Ex: 000.000.000-0">
-            </div>
-            <div>
-                <label for="">CEP</label>
-                <input type="text" placeholder="Digite seu CEP">
-            </div>
-            <div>
-                <label for="">Coplemento</label>
-                <input type="text" placeholder="Ex: apartamento">
-            </div>
-            <div>
-                <label for="">Cidade</label>
-                <input type="text" placeholder="Nome da cidade">
-            </div>
-            <div>
-                <label for="">Bairro</label>
-                <input type="text" placeholder="Nome do Bairro">
-        </div>
-        <div>
-            <label for="">Rua</label>
-            <input type="text" placeholder="Nome da Rua">
-        </div>
-        <div>
-            <label for="">Número da residência</label>
-            <input type="number" placeholder="N:">
-        </div>
+  <div class="form-container">
+    <h2>Cadastro Cliente</h2>
+    <form>
+      <div class="nome">
+        <input type="text" placeholder="Digite seu primeiro nome" name="nome">
+        <input type="text" placeholder="Digite seu Sobrenome" name="sobrenome">
+      </div>
+      <div class="email">
+      <input type="email" placeholder="Digite seu E-mail" name="email">
+    </div>
+      <div class="data-cpf">
+        <input type="text" placeholder="dd/mm/yyyy" name="data_nascimento">
+        <input type="text" placeholder="Ex: 000.000.000-0" name="cpf">
+      </div>
+      <div class="cep-complemento">
+        <input type="text" placeholder="Digite seu CEP" name="cep">
+        <input type="text" placeholder="Ex: apartamento 3" name="complemento">
+      </div>
+      <div class="cidade-bairro">
+        <input type="text" placeholder="Nome da Cidade" name="cidade">
+        <input type="text" placeholder="Nome do Bairro" name="bairro">
+      </div>
+      <div class="rua-numero">
+        <input type="text" placeholder="Nome da Rua" name="rua">
+        <input type="text" placeholder="N:" name="numero">
+      </div>
+      <label>Trabalha?</label>
+      <div class="trabalha">
+        <label><input type="radio" name="trabalha" value="sim"> Sim</label>
+        <label><input type="radio" name="trabalha" value="nao"> Não</label>
+      </div>
+      <input type="password" placeholder="Digite sua senha" name="senha">
+      <input type="password" placeholder="Digite novamente sua senha" name="confirmar_senha">
+      <button type="submit">Enviar</button>
     </form>
-</div>
-</main>
+  </div>
 </body>
 </html>

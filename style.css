@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nome {
+  display: flex;
+  gap: 10px;
+  }
+
+.email {
+  display: flex;
+  gap: 10px;
+  }
+
+.data-cpf {
+  display: flex;
+  gap: 10px;
+  }
+
+.cep-complemento {
+  display: flex;
+  gap: 10px;
+  }
+
+.cidade-bairro{
+  display: flex;
+  gap: 10px;
+  }
+
+.rua-numero {
+  display: flex;
+  gap: 10px;
+  }
+
+.nome input {
+  flex: 1;
+}
+
+.email input {
+  flex: 1;
+}
+
+.data-cpf input {
+  flex: 1;
+}
+
+.cep-compleento input {
+  flex: 1;
+}
+
+.cidade-bairro input {
+  flex: 1;
+}
+
+.rua-numero input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.trabalho {
+  display: flex;
+  gap: 20px;
+  padding: 5px 0;
+}
+
+button {
+  background-color: #4a72dd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3b5cc4;
+}
